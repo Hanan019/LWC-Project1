@@ -1,1 +1,5 @@
 @import "c/cssLibrary"; /*now whatever the css will be defined in the cssLibrary component will be available here.*/
+
+.bgclass {
+  background-color: var(--c-customBackground);
+}
