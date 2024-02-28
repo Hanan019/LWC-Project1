@@ -2,9 +2,19 @@
   <!-- lets test the functionality for the 
         importing cssLibrary.css into this compoennt
      -->
-  <h1>Journey of the LWC</h1>
-  <p class="paraclass">This component is getting Css from Share CSS Rule</p>
-  <div class="bgclass">
+  <div class="bgclass slds-text-align_center">
+    <h1>Journey of the LWC</h1>
+    <p class="paraclass">This component is getting Css from Share CSS Rule</p>
     <h2>This the Custom Dive with the aura token of the CSS class</h2>
+  </div>
+
+  <div>
+    <lightning-button
+      variant="brand"
+      label="Brand"
+      title="Primary action"
+      onclick={handleClick}
+      class="slds-var-m-left_x-small customDesign"
+    ></lightning-button>
   </div>
 </template>

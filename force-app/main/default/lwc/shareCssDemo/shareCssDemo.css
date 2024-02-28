@@ -1,5 +1,9 @@
 @import "c/cssLibrary"; /*now whatever the css will be defined in the cssLibrary component will be available here.*/
 
 .bgclass {
-  background-color: var(--c-customBackground);
+  background-color: var(--c-customBackground); /*design toker*/
+}
+.customDesign {
+  --slds-c-button-brand-color-background: #00ddff;
+  --slds-c-button-brand-color-background-active: hsla(190, 79%, 56%, 0.536);
 }
