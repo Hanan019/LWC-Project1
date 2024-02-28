@@ -1,4 +1,4 @@
-import { LightningElement, track } from "lwc";
+import { LightningElement } from "lwc";
 
 export default class NestedObjectPrivateProperty extends LightningElement {
   myObjectTest = { First: "Hanan", Last: "Maqbol" };
