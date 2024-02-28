@@ -1,0 +1,32 @@
+<template>
+  <lightning-card title="THis is Lightning Card for the Primitive properties.">
+    <p class="slds-var-p-around_small">
+      {myObjectTest.First} {myObjectTest.Last}
+    </p>
+    <div class="slds-var-p-around_small">
+      <lightning-button
+        variant="brand"
+        label="Click to change"
+        onclick={handleClick}
+      ></lightning-button>
+    </div>
+
+    <p class="slds-var-p-around_small">{NewTask}</p>
+
+    <div class="slds-var-p-around_small">
+      <lightning-button
+        variant="success"
+        label="Click element"
+        onclick={addTaskHandler}
+      ></lightning-button>
+    </div>
+
+    <div class="slds-var-p-around_small">
+      <lightning-button
+        variant="success"
+        label="Refresh Data"
+        onclick={refreshHandler}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>
