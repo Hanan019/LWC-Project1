@@ -1,3 +1,13 @@
 <template>
-    
+  <lightning-card icon-name="standard:account" variant="base">
+    <div slot="title">Child Component Accessing the Parent using @api</div>
+    <div>
+      <p>
+        <lightning-formatted-text
+          class="slds-var-p-left_x-large"
+          value={display}
+        ></lightning-formatted-text>
+      </p>
+    </div>
+  </lightning-card>
 </template>
