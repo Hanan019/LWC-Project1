@@ -5,6 +5,7 @@ export default class Calculator extends LightningElement {
   numberone = "";
   numbertwo = "";
   result = 0;
+  displayResult = false;
 
   // Handles input changes in the text fields.
   changeHandler(event) {
@@ -20,6 +21,7 @@ export default class Calculator extends LightningElement {
   }
 
   calculateInput(event) {
+    this.displayResult = true;
     let labelElement = event.target.label;
     if (labelElement === "Add") {
       this.result = parseInt(this.numberone, 10) + parseInt(this.numbertwo, 10);
