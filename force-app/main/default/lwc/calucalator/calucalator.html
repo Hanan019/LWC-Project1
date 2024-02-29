@@ -1,0 +1,60 @@
+<template>
+  <lightning-card title="Calculator" icon-name="custom-custom14">
+    <div class="slds-var-p-vertical_x-small">
+      <!--inouts-->
+      <lightning-input
+        label="Number 1"
+        name="Number1"
+        onchange={changeHandler}
+        class="slds-var-m-left_xx-large slds-var-m-right_xx-large"
+        placeholder="Please First Number"
+        value={numberone}
+      ></lightning-input>
+      <lightning-input
+        label="Number 2"
+        name="Number2"
+        onchange={changeHandler}
+        class="slds-var-m-left_xx-large slds-var-m-right_xx-large"
+        placeholder="Enter Number 2"
+        value={numbertwo}
+      ></lightning-input>
+    </div>
+    <div class="slds-var-m-left_xx-large">
+      <!--Buttons-->
+      <lightning-button
+        variant="brand-outline"
+        label="Add"
+        class="slds-var-p-around_small"
+        onclick={calculateInput}
+      ></lightning-button>
+      <lightning-button
+        variant="brand-outline"
+        label="Subtract"
+        class="slds-var-p-around_small"
+        onclick={calculateInput}
+      ></lightning-button>
+      <lightning-button
+        variant="brand-outline"
+        label="Multiply"
+        class="slds-var-p-around_small"
+        onclick={calculateInput}
+      ></lightning-button>
+      <lightning-button
+        variant="brand-outline"
+        label="Divide"
+        class="slds-var-p-around_small"
+        onclick={calculateInput}
+      ></lightning-button>
+      <br />
+      <lightning-button
+        variant="brand"
+        label="Clear"
+        class="slds-var-p-around_small slds-var-m-top_x-small"
+        onclick={resetResultHandler}
+      ></lightning-button>
+    </div>
+    <div class="slds-text-heading_large lds-text-align_center">
+      <p>The Result is : {result}</p>
+    </div>
+  </lightning-card>
+</template>
