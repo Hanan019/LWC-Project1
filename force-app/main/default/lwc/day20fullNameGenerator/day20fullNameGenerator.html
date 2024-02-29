@@ -1,0 +1,18 @@
+<template>
+  <div class="slds-var-p-vertical_x-small">
+    <lightning-input-name
+      label="Full Name Generator"
+      first-name={firstName}
+      middle-name={middleName}
+      last-name={lastName}
+      suffix="The 3rd"
+      salutation="Mr."
+      options={salutationOptions}
+      onchange={nameHandle}
+      value=""
+    ></lightning-input-name>
+    <p>
+      <lightning-formatted-text value={fullName}></lightning-formatted-text>
+    </p>
+  </div>
+</template>
